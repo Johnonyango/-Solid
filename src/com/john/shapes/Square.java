@@ -3,6 +3,13 @@ package com.john.shapes;
 import java.util.Scanner;
 
 public class Square extends Cube{
+
+    private Scanner sc;
+
+    public Square() {
+        sc=new Scanner(System.in);
+        prompt(sc);
+    }
     @Override
     public void prompt(Scanner scanner) {
         System.out.println("enter the length");

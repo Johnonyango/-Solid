@@ -18,6 +18,7 @@ public class Rectangle extends Shape {
         setLength(scanner.nextInt());
         System.out.println("enter the width");
         setWidth(scanner.nextInt());
+
         System.out.println("Area is:" + calculateArea() + '\n' + "Perimeter is:" +calculatePerimeter());
 
     }

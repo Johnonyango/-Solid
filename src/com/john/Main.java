@@ -67,7 +67,7 @@ public class Main {
                     shapes.add(sphere.toString());
                     break;
                 case 0:
-                    System.out.println("Thank you for using this program");
+                    System.out.println("Goodbye...");
                     break;
                 default:
                     System.out.println("invalid Option");

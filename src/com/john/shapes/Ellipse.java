@@ -7,6 +7,13 @@ public class Ellipse extends Shape {
     int majorRadius;
     int minorRadius;
 
+    private Scanner sc;
+
+    public Ellipse() {
+        sc=new Scanner(System.in);
+        prompt(sc);
+    }
+
     @Override
     public void prompt(Scanner scanner) {
         System.out.println("enter the length");
@@ -17,7 +24,7 @@ public class Ellipse extends Shape {
 
     @Override
     public int calculateArea() {
-        return 0;
+        return PI * majorRadius*minorRadius;
     }
 
     @Override

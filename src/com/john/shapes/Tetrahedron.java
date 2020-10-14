@@ -3,6 +3,12 @@ package com.john.shapes;
 import java.util.Scanner;
 
 public class Tetrahedron extends Shape{
+    private Scanner sc;
+
+    public Tetrahedron() {
+        sc=new Scanner(System.in);
+        prompt(sc);
+    }
     @Override
     public void prompt(Scanner scanner) {
         System.out.println("enter the length");
@@ -23,5 +29,10 @@ public class Tetrahedron extends Shape{
     @Override
     public int calculatePerimeter() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Tetrahedron{}";
     }
 }

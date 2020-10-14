@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Circle extends  Shape{
     private final int PI = (int)3.142;
+
+    private Scanner sc;
+
+    public Circle() {
+        sc=new Scanner(System.in);
+        prompt(sc);
+    }
     @Override
     public void prompt(Scanner scanner) {
         System.out.println("enter the radius");
