@@ -1,6 +1,13 @@
 package com.john.shapes;
 
+import java.util.Scanner;
+
 public class Circle extends  Shape{
+    @Override
+    public void prompt(Scanner scanner) {
+
+    }
+
     @Override
     public int calculateArea() {
         return 0;

@@ -5,21 +5,30 @@ import com.john.shapes.Shape;
 import java.util.Scanner;
 
 public class Rectangle extends Shape {
+    private Scanner sc;
 
+    public Rectangle() {
+        sc=new Scanner(System.in);
+        prompt(sc);
+    }
 
-    int length = Math.abs(sc.nextInt());
-    int  width = Math.abs(sc.nextInt());
+    @Override
+    public void prompt(Scanner scanner) {
+        System.out.println("enter the length");
+        setLength(scanner.nextInt());
+        System.out.println("enter the width");
+        setWidth(scanner.nextInt());
+        System.out.println("Area is:" + calculateArea() + '\n' + "Perimeter is:" +calculatePerimeter());
 
-    public Rectangle(){
     }
 
     @Override
     public int calculateArea() {
-        return  length * width;
+        return getLength() * getWidth();
     }
 
     @Override
     public int calculatePerimeter() {
-        return 2 *(length + width);
+        return 2 *(getLength() + getWidth());
     }
 }

@@ -1,6 +1,13 @@
 package com.john.shapes;
 
+import java.util.Scanner;
+
 public class Ellipse extends Shape {
+
+    @Override
+    public void prompt(Scanner scanner) {
+
+    }
 
     @Override
     public int calculateArea() {
