@@ -28,4 +28,12 @@ public class Sphere extends Ellipse {
     public int calculatePerimeter() {
         return (int) (0.75*PI*getRadius()*getRadius()*getRadius());
     }
+
+    @Override
+    public String toString() {
+        return "Sphere{" +
+                "PI=" + PI +
+                ", sc=" + sc +
+                '}';
+    }
 }

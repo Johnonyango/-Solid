@@ -28,4 +28,11 @@ public class Square extends Cube{
     public int calculatePerimeter() {
         return  getLength()*4;
     }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "sc=" + sc +
+                '}';
+    }
 }

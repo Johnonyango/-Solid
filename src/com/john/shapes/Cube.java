@@ -29,4 +29,11 @@ public class Cube extends Box {
     public int calculatePerimeter() {
         return super.calculatePerimeter();
     }
+
+    @Override
+    public String toString() {
+        return "Cube{" +
+                "sc=" + sc +
+                '}';
+    }
 }

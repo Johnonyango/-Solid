@@ -48,7 +48,8 @@ public class Main {
                     break;
                 case 5:
                     Cube cube = new Cube();
-                    shapes.add(cube.toString());;
+                    shapes.add(cube.toString());
+                    ;
                     break;
                 case 6:
                     Circle circle = new Circle();
@@ -73,10 +74,11 @@ public class Main {
                     System.out.println("invalid Option");
                     break;
 
-            }
-
+            };
         }while(choice != 0);
+        System.out.println(shapes);
     }
+
 
 }
 

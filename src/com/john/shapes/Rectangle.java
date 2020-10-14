@@ -32,4 +32,11 @@ public class Rectangle extends Shape {
     public int calculatePerimeter() {
         return 2 *(getLength() + getWidth());
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "sc=" + sc +
+                '}';
+    }
 }

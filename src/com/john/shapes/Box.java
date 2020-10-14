@@ -28,4 +28,11 @@ public class Box  extends Rectangle{
     public int calculatePerimeter() {
         return 2*(getLength()+getWidth());
     }
+
+    @Override
+    public String toString() {
+        return "Box{" +
+                "sc=" + sc +
+                '}';
+    }
 }
