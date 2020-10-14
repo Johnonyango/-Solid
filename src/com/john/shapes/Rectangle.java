@@ -6,25 +6,20 @@ import java.util.Scanner;
 
 public class Rectangle extends Shape {
 
+
+    int length = Math.abs(sc.nextInt());
+    int  width = Math.abs(sc.nextInt());
+
     public Rectangle(){
-        sc=new Scanner(System.in);
-
-        System.out.println("enter the length ");
-        int length = Math.abs(sc.nextInt());
-
-        System.out.println("enter the width ");
-        int  width = Math.abs(sc.nextInt());
-
-
     }
 
     @Override
     public int calculateArea() {
-        return  0;
+        return  length * width;
     }
 
     @Override
     public int calculatePerimeter() {
-        return 0;
+        return 2 *(length + width);
     }
 }
